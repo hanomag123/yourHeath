@@ -1,8 +1,60 @@
 .header {
-    @include breakpoint($xl-bp) {
-      position: fixed;
-      top: 0;
-      left: 0;
+  position: fixed;
+  width: 100%;
+  transition: transform .3s;
+  will-change: transform;
+  top: 0;
+
+  @include breakpoint($xl-bp) {
+    padding-bottom: 2.3rem;
+    position: fixed;
+  }
+
+  @include breakpoint($xl-bp) {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+  }
+}
+
+.out {
+  transform: translate3d(0, -100%, 0);
+}
+
+
+.header--active {
+  background-color: rgba(0, 94, 154, 0.25);
+}
+
+.hv-undrl {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.1rem;
+    background-color: var(--black);
+    transition: width .3s;
+  }
+
+  &:hover {
+    &::after {
       width: 100%;
     }
+  }
+}
+
+.hv-undrl--white {
+  &::after {
+    background-color: var(--white);
+  }
+}
+
+.blur-block {
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
 }

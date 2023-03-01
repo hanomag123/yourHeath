@@ -9,6 +9,14 @@
     {{> sprite }}
 
     <div class="page">
+
+        <!-- Preloader-->
+
+        <div class="preloader" id="preloader">
+            <div class="spin">
+                <div class="lds-ring"><div></div><div></div><div></div><div class="logo"><svg><use href='#logoPreloaderIcon'></use></svg></div></div>
+            </div>
+        </div>
         
         <!-- Header -->
 
@@ -29,6 +37,11 @@
     <!-- JS -->
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/app.js"></script>
+
+        
+    <script>
+        window.onload = function() { preloader.style.opacity = "0"; setTimeout(() => preloader.style.display = 'none', 300);}
+    </script>
 </body>
 
 </html>

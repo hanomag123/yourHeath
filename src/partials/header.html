@@ -1,11 +1,21 @@
-<header class="header">
-  {{> menu}}
-
-  <button class="menu-button myclass">
-    <span class="burger-button-close">
-      <span id="first-line-burger"></span>
-      <span id="second-line-burger"></span>
-      <span id="third-line-burger"></span>
-  </span>
-  </button>
+<header class="header z-10 blur-block">
+  <div class="container flex items-center gap-61">
+    <div>
+      <a href="#home" class="block py-15 xl:py-10">
+        <svg class="w-144 h-40 sm:h-26"><use href='#logoIcon'></use></svg>
+      </a>
+    </div>
+  
+    {{> menu}}
+  
+    <button class="menu-button">
+      <span class="burger-button-close">
+        <span id="first-line-burger"></span>
+        <span id="second-line-burger"></span>
+        <span id="third-line-burger"></span>
+      </span>
+    </button>
+  </div>
 </header>
+
+<div class="h-70 w-full"></div>
