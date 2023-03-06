@@ -1,20 +1,23 @@
 .header {
   position: fixed;
   width: 100%;
-  transition: transform .3s;
+  transition: transform .3s, background-color .1s;
+  background-color: transparent;
   will-change: transform;
   top: 0;
-
-  @include breakpoint($xl-bp) {
-    padding-bottom: 2.3rem;
-    position: fixed;
-  }
 
   @include breakpoint($xl-bp) {
     // position: fixed;
     // top: 0;
     // left: 0;
     width: 100%;
+  }
+  nav {
+    ul {
+      li.active {
+        color: var(--lblue);
+      }
+    }
   }
 }
 
@@ -25,6 +28,16 @@
 
 .header--active {
   background-color: rgba(0, 94, 154, 0.25);
+}
+
+.header--menu {
+  @include breakpoint($xl-bp) {
+    height: 100%;
+    .header-text {
+      fill: var(--black);
+    }
+  }
+
 }
 
 .hv-undrl {
@@ -57,4 +70,7 @@
 .blur-block {
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
+}
+.custom-blur {
+  filter: blur(7.5rem);
 }

@@ -1,18 +1,21 @@
 <header class="header z-10 blur-block">
-  <div class="container flex items-center gap-61">
-    <div>
-      <a href="#home" class="block py-15 xl:py-10">
-        <svg class="w-144 h-40 sm:h-26"><use href='#logoIcon'></use></svg>
+  <div class="container flex items-center justify-between gap-61">
+    <div class="xl:relative xl:z-10">
+      <a href="#" class="flex gap-3 py-15 xl:py-16">
+        <svg class="w-35 h-40"><use href='#logoPreloaderIcon'></use></svg>
+        <svg class="header-text w-109 h-40 fill-white"><use href='#logoText'></use></svg>
       </a>
     </div>
   
     {{> menu}}
   
     <button class="menu-button">
-      <span class="burger-button-close">
-        <span id="first-line-burger"></span>
-        <span id="second-line-burger"></span>
-        <span id="third-line-burger"></span>
+      <span class="menu-button-wrapper">
+        <span class="burger-button-close">
+          <span id="first-line-burger"></span>
+          <span id="second-line-burger"></span>
+          <span id="third-line-burger"></span>
+        </span>
       </span>
     </button>
   </div>

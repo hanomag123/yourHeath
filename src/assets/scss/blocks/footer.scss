@@ -1,0 +1,47 @@
+.footer {
+  padding-top: 8rem;
+  @include breakpoint($xl-bp) {
+    padding-top: 5.6rem;
+  }
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 38rem 1fr 17rem max-content;
+  gap: 2rem;
+  padding-bottom: 8rem;
+  border-bottom: 0.1rem solid #393939;
+  @include breakpoint($xl-bp) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  @include breakpoint($sm-bp) {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    padding-bottom: 5.6rem;
+  }
+}
+
+.footer__bot {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 130%;
+  /* or 18px */
+  
+  
+  color: #636363;
+  padding-top: 2.7rem;
+  padding-bottom: 2.7rem;
+
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  gap: 9rem;
+  @include breakpoint($xl-bp) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}

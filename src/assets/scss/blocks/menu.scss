@@ -78,24 +78,25 @@
   width: 100%;
   padding-right: 2.7rem;
   @include breakpoint($xl-bp) {
-    height: calc(100% - 8rem);
     overflow: auto;
     position: absolute;
-    top: 8rem;
+    top: 0;
     right: 0;
     z-index: 3;
     transform: translateX(100%);
     width: 100%;
     background-color: var(--white);
     transition: transform .5s ease;
-    padding: 2.4rem 2rem;
+    padding: 2.4rem;
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
+    padding-top: 9rem;
+    gap: 4.9rem;
   }
   @include breakpoint($sm-bp) {
-    height: calc(100% - 7rem);
-    top: 7rem;
-    padding: 2rem;
+    padding: 2.4rem;
+    padding-top: 9.2rem;
   }
   .menu__right-block {
     display: flex;
@@ -120,32 +121,29 @@
   transform: translateX(0);
 }
 
-// .menu-button {
-//   width: 30px;
-//   height: 30px;
-
-//   background-color: red;
-
-//   position: absolute;
-
-//   right: 0;
-//   top: 0;
-
-//   z-index: 3;
-// }
-
 .menu-button {
-  width: 4rem;
-  height: 3.4rem;
+  width: 4.8rem;
+  height: 4.8rem;
   background-color: transparent;
   border: 0;
 
   z-index: 4;
   display: none;
   position: relative;
+  background-color: var(--lblue);
   @include breakpoint($xl-bp) {
-    margin-top: 1.6rem;
+    margin-top: 1.2rem;
     align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  .menu-button-wrapper {
+    height: 1.5rem;
+    width: 2rem;
+    position: relative;
+    display: block;
   }
   .burger-button-close {
     #first-line-burger,
@@ -154,7 +152,7 @@
         width: 100%;
         height: 0.2rem;
         border-radius: 0.2rem;
-        background-color: black;
+        background-color: var(--black);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -167,22 +165,14 @@
         top: 0%;
     }
     #second-line-burger {
-      top: 46%;
+      top: 46.5%;
     }
     #third-line-burger {
         top: unset;
         bottom: 0%;
     }
   }
-  @include breakpoint($xl-bp) {
-    display: block;
-    margin-left: 3rem;
-  }
-  @include breakpoint($sm-bp) {
-    margin-left: 0;
-    width: 2.4rem;
-    height: 1.6rem;
-  }
+
 }
 
 .header__menu-button--active,

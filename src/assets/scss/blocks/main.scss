@@ -46,6 +46,16 @@
     filter: blur(7.5rem);
     transform: rotate(15deg);
     z-index: -1;
+    @include breakpoint($sm-bp) {
+      width: 22rem;
+      height: 21.8rem;
+      left: 4rem;
+      top: 33.4rem;
+      z-index: 0;
+      
+      background: #00AEDA;
+      filter: blur(6.5rem);
+    }
   }
 
   &::after {
@@ -61,6 +71,17 @@
     filter: blur(7.5rem);
     transform: rotate(15deg);
     z-index: -2;
+    @include breakpoint($xl-bp) {
+      width: 25.4rem;
+      height: 25.1rem;
+      left: auto;
+      right: 0;
+      top: 30rem;
+      filter: blur(5.5rem);
+      background: #26FFE6;
+      transform: unset;
+      z-index: -1;
+    }
   }
 }
 
@@ -69,6 +90,18 @@
   height: 72rem;
   top: 5rem;
   right: -8rem;
+  @include breakpoint($xl-bp) {
+    width: 100%;
+    right: -4rem;
+    top: 26rem;
+    height: 39rem;
+  }
+  @include breakpoint($sm-bp) {
+    width: 107%;
+    height: 45rem;
+    right: -2rem;
+    top: 25rem;
+  }
 }
 
 .snowflake {
@@ -76,6 +109,9 @@
   height: 46.5rem;
   top: 28rem;
   left: 51rem;
+  @include breakpoint($xl-bp) {
+    display: none;
+  }
 }
 
 .snowflake2 {
@@ -83,6 +119,10 @@
   height: 29.4rem;
   top: 18rem;
   left: 10.5rem;
+  @include breakpoint($sm-bp) {
+    top: 30rem;
+    left: -14.5rem;
+  }
 }
 
 .img-contain {
@@ -141,7 +181,15 @@
     background: var(--lblue);
     filter: blur(7.5rem);
     transform: rotate(15deg);
-    z-index: -1;
+    z-index: 1;
+    @include breakpoint($sm-bp) {
+      width: 12.6rem;
+      height: 12.6rem;
+      left: 3.2rem;
+      top: 24.9rem;
+      filter: blur(4.5rem);
+      transform: rotate(15deg);
+    }
 
   }
 
@@ -155,7 +203,17 @@
     border-radius: 100%;
     background: var(--blue);
     filter: blur(7.5rem);
-    z-index: -1;
+    z-index: 1;
+    @include breakpoint($xl-bp) {
+      width: 32.1rem;
+      height: 32.6rem;
+      left: -2rem;
+      top: 28.5rem;
+    }
+  }
+  img {
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -182,6 +240,10 @@
     background-color: var(--white);
     height: 29.5rem;
     min-height: 29.5rem;
+    @include breakpoint($xl-bp) {
+      height: auto;
+      min-height: auto;
+    }
   }
 }
 
@@ -197,6 +259,15 @@
   grid-template-rows: 13rem 20rem 15rem 13rem;
   column-gap: 3.9rem;
   row-gap: 2.9rem;
+  @include breakpoint($xl-bp) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  @include breakpoint($sm-bp) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.4rem;
+    grid-template-rows: auto;
+  }
 }
 
 .ficha-list__item {
@@ -207,6 +278,10 @@
   gap: 2rem;
   padding: 3rem;
   padding-bottom: 3.6rem;
+  @include breakpoint($xl-bp) {
+    padding: 2.4rem;
+    border-radius: 1.5rem;
+  }
 }
 .ficha-list__item--round {
   background-color: rgba(255, 255, 255, 0.35);
@@ -222,6 +297,11 @@
   height: 36rem;
   grid-row: 2 span;
   z-index: 3;
+  @include breakpoint($sm-bp) {
+    width: 100%;
+    height: 32.7rem;
+    gap: 1.6rem;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -245,6 +325,9 @@
   text-align: center;
   padding: 0;
   padding-top: 3rem;
+  @include breakpoint($sm-bp) {
+    gap: 1.6rem;
+  }
 }
 .ficha-list__item--col-wide {
   display: flex;
@@ -258,6 +341,17 @@
   margin-top: 1rem;
   z-index: 1;
   position: relative;
+  @include breakpoint($xl-bp) {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  @include breakpoint($sm-bp) {
+    grid-row: 5 / 6;
+    margin-top: 0;
+    overflow: hidden;
+    padding-bottom: 24.5rem;
+    gap: 1.6rem;
+  }
 }
 
 .ficha-list__item--col-last {
@@ -268,13 +362,20 @@
   text-align: center;
   padding: 3rem;
   padding-top: 4.6rem;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   grid-row: 2 span;
   margin-top: 1rem;
-  
+  @include breakpoint($sm-bp) {
+    margin-top: 0;
+    padding: 2.4rem;
+
+  }
 }
 .ficha-list__title {
   padding-top: 0.6rem;
+  @include breakpoint($xl-bp) {
+    padding-top: 0;
+  }
 }
 
 .cross {
@@ -282,6 +383,9 @@
   height: 36rem;
   grid-row: 2 span;
   z-index: 1;
+  @include breakpoint($sm-bp) {
+    height: 33rem;
+  }
 }
 .cross-c {
   background-color: rgba(255, 255, 255, 0.35);
@@ -292,6 +396,10 @@
   transform: translate(-50%, -50%);
   width: 12rem;
   height: 12rem;
+  @include breakpoint($sm-bp) {
+    width: 11rem;
+    height: 11rem;
+  }
 }
 .cross-t, .cross-b {
   position: absolute;
@@ -301,6 +409,10 @@
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(0.5rem);
+  @include breakpoint($sm-bp) {
+    width: 11rem;
+    height: 11rem;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -318,6 +430,9 @@
   top: calc(50% - 12rem);
   border-top-right-radius: 2.5rem;
   border-top-left-radius: 2.5rem;
+  @include breakpoint($sm-bp) {
+    top: calc(50% - 11rem);
+  }
   &::before {
     border-top-right-radius: 2.5rem;
     border-top-left-radius: 2.5rem;
@@ -330,6 +445,9 @@
   top: calc(50% + 12rem);
   border-bottom-right-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
+  @include breakpoint($sm-bp) {
+    top: calc(50% + 11rem);
+  }
   &::before {
     border-bottom-right-radius: 2.5rem;
     border-bottom-left-radius: 2.5rem;
@@ -347,6 +465,10 @@
   height: 12rem;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(0.5rem);
+  @include breakpoint($sm-bp) {
+    width: 11rem;
+    height: 11rem;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -363,6 +485,9 @@
   left: calc(50% - 12rem);
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
+  @include breakpoint($sm-bp) {
+    left: calc(50% - 11rem);
+  }
   &::before {
     border-top-left-radius: 2.5rem;
     border-bottom-left-radius: 2.5rem;
@@ -375,6 +500,9 @@
   left: calc(50% + 12rem);
   border-top-right-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
+  @include breakpoint($sm-bp) {
+    left: calc(50% + 11rem);
+  }
   &::before {
     border-top-right-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;
@@ -397,17 +525,49 @@
   z-index: 1;
   text-align: center;
   width: 24.6rem;
+  @include breakpoint($sm-bp) {
+    top: 49%;
+    gap: 1.6rem;
+  }
 }
 
 
 .ourComand-swiper {
+  @include breakpoint($xl-bp) {
+    padding-bottom: 4.3rem;
+  }
   .swiper-slide {
     width: 36rem;
     margin-right: 4rem;
+    @include breakpoint($xl-bp) {
+      width: 32.5rem;
+    }
+    @include breakpoint($sm-bp) {
+      width: 100%;
+      margin-right: 2.5rem;
+    }
+  }
+  .swiper-pagination {
+    display: none;
+    @include breakpoint($xl-bp) {
+      display: unset;
+    }
+  }
+  .swiper-pagination-bullet {
+    border: 1px solid var(--lblue);
+    background-color: transparent;
+    opacity: 1;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: all .3s;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--lblue);
   }
 }
 
 .blur-slide {
+  position: relative;
   &::before {
     content: '';
     position: absolute;
@@ -419,7 +579,6 @@
     background: var(--lblue);
     filter: blur(7.5rem);
     transform: rotate(15deg);
-    z-index: -1;
   }
   &::after {
     content: '';
@@ -431,6 +590,122 @@
     
     background: var(--blue);
     filter: blur(7.5rem);
-    z-index: -1;
+  }
+}
+
+.comments-swiper {
+  overflow: hidden;
+  @include breakpoint($xl-bp) {
+    padding-bottom: 4.3rem;
+  }
+  .swiper-slide {
+    width: 36rem;
+    // margin-right: 4rem;
+  }
+  .swiper-pagination {
+    display: none;
+    @include breakpoint($xl-bp) {
+      display: unset;
+    }
+  }
+  .swiper-pagination-bullet {
+    border: 1px solid var(--lblue);
+    background-color: transparent;
+    opacity: 1;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: all .3s;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--lblue);
+  }
+}
+
+.map-shadow {
+  filter: drop-shadow(0.4rem 0.4rem 2.4rem rgba(0, 94, 154, 0.22));
+}
+
+.store {
+  @include breakpoint($sm-bp) {
+    li {
+      display: none;
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+}
+
+.services-swiper {
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    @include breakpoint($xl-bp) {
+      display: flex;
+      gap: 0;
+    }
+  }
+  .swiper-slide {
+    @include breakpoint($xl-bp) {
+      width: 100%;
+      height: min-content;
+    }
+  }
+  .swiper-pagination-bullet {
+    border: 1px solid #005E9A;
+    background-color: transparent;
+    opacity: 1;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: all .3s;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #005E9A;
+  }
+}
+
+.ball-1 {
+  @apply absolute xl:hidden top-40 left-[26rem] z-[-1] w-[41.4rem] h-[31.2rem] rounded-full custom-blur rotate-[10.5deg] bg-lblue;
+}
+
+.ball-2 {
+  @apply absolute top-40 right-10 z-[-1] w-[44rem] xl:w-[21.1rem] h-[41.6rem] xl:h-[15.9rem] rounded-full custom-blur bg-blue xl:bg-lblue opacity-70 xl:opacity-100;
+  @include breakpoint($xl-bp) {
+    top: 15rem;
+    left: 2rem;
+    filter: blur(5rem);
+  }
+}
+
+.ball-3 {
+  @apply absolute top-[27rem] left-[25rem] z-[-1] w-[49.5rem] xl:w-[28rem] h-[46.8rem] xl:h-[26.5rem] rounded-full custom-blur bg-blue opacity-70;
+  @include breakpoint($xl-bp) {
+    right: -2rem;
+    left: auto;
+    top: 23rem;
+    filter: blur(5rem);
+  }
+}
+
+.pplus {
+  @include breakpoint($xl-bp) {
+    p + p {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.wave {
+  @include breakpoint($xl-bp) {
+    &::before {
+      content: '';
+      width: 100%;
+      height: 20rem;
+      background-color: var(--dblue);
+      bottom: 5rem;
+      left: 0;
+      position: absolute;
+    }
   }
 }
