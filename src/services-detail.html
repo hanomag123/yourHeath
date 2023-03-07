@@ -14,20 +14,21 @@
         стоматология</h2>
 
       <div class="mt-40 xl:mt-28 flex xl:flex-col gap-21 sm:gap-10 relative z-[2]">
-        <button class="page-button px-28 py-22 xl:py-20 text-18 xl:text-16 leading-110% font-medium">Записаться</button>
+        <a href="#last-modal" class="page-button px-28 py-22 xl:py-20 text-18 xl:text-16 leading-110% font-medium">Записаться</a>
 
-        <a href="#"
+        <a href="#prices"
           class="btn-transparent text-18 xl:text-16 leading-110% font-medium flex items-center gap-10 px-28 py-20 xl:justify-center">
           Смотреть цены
         </a>
       </div>
+
+
+        <div class="service-snowflake img-contain absolute z-[1]">
+          <img src="./assets/images/services-detail/services-detail-bg.png" alt="service-bg">
+        </div>
+
     </div>
 
-    <div class="w-full h-full absolute top-0 left-0 overflow-hidden">
-      <div class="service-snowflake img-contain absolute z-[1]">
-        <img src="./assets/images/services-detail/services-detail-bg.png" alt="service-bg">
-      </div>
-    </div>
   </section>
 
   <div class="relative bg-dwhite z-[1] custom-detail-block">
@@ -53,13 +54,13 @@
               терапевта.
             </p>
           </div>
-          <div class="img-cover w-full h-[45rem] sm:h-190 overflow-hidden rounded-25 xl:rounded-15 xl:mt-12">
+          <a data-fancybox href="./assets/images/services-detail/service-detail-1.jpg" class="img-cover w-full h-[45rem] sm:h-190 overflow-hidden rounded-25 xl:rounded-15 xl:mt-12">
             <img src="./assets/images/services-detail/service-detail-1.jpg" alt="service-detail">
-          </div>
+          </a>
         </div>
       </section>
 
-      <section class="mt-120 xl:mt-80 grid grid-cols-[36rem_1fr] xl:grid-cols-1 gap-40 xl:gap-32">
+      <section class="mt-120 xl:mt-80 grid grid-cols-[36rem_1fr] xl:grid-cols-1 gap-40 xl:gap-32" id="prices">
         <h2 class="text-45 xl:text-24 leading-110% font-semiboldf montserat h-min">Цены на хирургию</h2>
 
         <ul
@@ -139,120 +140,10 @@
 
   </div>
 
-  <section class="ourComand mt-85 xl:mt-40 relative">
+  <section class="mt-85 xl:mt-40 relative">
 
-    <div class="container flex justify-between items-center">
-      <h2 class="text-45 xl:text-24 leading-110% font-semibold montserat text-white">Наша команда профессионалов</h2>
+    {{> ourComand-swiper}}
 
-      <div class="flex sm:hidden gap-20 pr-20">
-        <button class="swiper-button rotate-180 prev">
-          <svg>
-            <use href='#arrowIcon'></use>
-          </svg>
-        </button>
-        <button class="swiper-button next">
-          <svg>
-            <use href='#arrowIcon'></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="swiper ourComand-swiper mt-60 sm:mt-32 container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide rounded-25 bg-white pt-30 blur-slide overflow-hidden relative group">
-          <h3 class="text-24 xl:text-18 leading-120% font-semibold text-center px-32">Анастасия Константиновна</h3>
-          <div class="text-14 xl:text-16 leading-140% Helvetica xl:inter text-center mt-12 sm:mt-8 opacity-70">Детский
-            стоматолог</div>
-
-          <div class="mt-24 sm:mt-10 pl-23 xl:pl-0 pr-2 w-full h-[35.5rem] relative z-1 z-1">
-            <img class="w-full h-full object-contain object-bottom" src="./assets/images/ourComand/ourComand-1.png"
-              alt="ourComand">
-          </div>
-
-          <div
-            class="w-full p-30 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-1 z-1">
-            <a href="#" class="page-button p-[1.75rem] text-14 leading-110% w-full">Подробнее о враче</a>
-          </div>
-        </div>
-        <div class="swiper-slide rounded-25 bg-white pt-30 blur-slide overflow-hidden relative group">
-          <h3 class="text-24 xl:text-18 leading-120% font-semibold text-center px-32">Анастасия Константиновна</h3>
-          <div class="text-14 xl:text-16 leading-140% Helvetica xl:inter text-center mt-12 sm:mt-8 opacity-70">Детский
-            стоматолог</div>
-
-          <div class="mt-24 sm:mt-10 pl-23 xl:pl-0 pr-2 w-full h-[35.5rem] relative z-1 z-1">
-            <img class="w-full h-full object-contain object-bottom" src="./assets/images/ourComand/ourComand-2.png"
-              alt="ourComand">
-          </div>
-
-          <div
-            class="w-full p-30 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-1 z-1">
-            <a href="#" class="page-button p-[1.75rem] text-14 leading-110% w-full">Подробнее о враче</a>
-          </div>
-        </div>
-        <div class="swiper-slide rounded-25 bg-white pt-30 blur-slide overflow-hidden relative group">
-          <h3 class="text-24 xl:text-18 leading-120% font-semibold text-center px-32">Анастасия Константиновна</h3>
-          <div class="text-14 xl:text-16 leading-140% Helvetica xl:inter text-center mt-12 sm:mt-8 opacity-70">Детский
-            стоматолог</div>
-
-          <div class="mt-24 sm:mt-10 pl-23 xl:pl-0 pr-2 w-full h-[35.5rem] relative z-1 z-1">
-            <img class="w-full h-full object-contain object-bottom" src="./assets/images/ourComand/ourComand-1.png"
-              alt="ourComand">
-          </div>
-
-          <div
-            class="w-full p-30 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-1 z-1">
-            <a href="#" class="page-button p-[1.75rem] text-14 leading-110% w-full">Подробнее о враче</a>
-          </div>
-        </div>
-        <div class="swiper-slide rounded-25 bg-white pt-30 blur-slide overflow-hidden relative group">
-          <h3 class="text-24 xl:text-18 leading-120% font-semibold text-center px-32">Анастасия Константиновна</h3>
-          <div class="text-14 xl:text-16 leading-140% Helvetica xl:inter text-center mt-12 sm:mt-8 opacity-70">Детский
-            стоматолог</div>
-
-          <div class="mt-24 sm:mt-10 pl-23 xl:pl-0 pr-2 w-full h-[35.5rem] relative z-1 z-1">
-            <img class="w-full h-full object-contain object-bottom" src="./assets/images/ourComand/ourComand-2.png"
-              alt="ourComand">
-          </div>
-
-          <div
-            class="w-full p-30 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-1 z-1">
-            <a href="#" class="page-button p-[1.75rem] text-14 leading-110% w-full">Подробнее о враче</a>
-          </div>
-        </div>
-        <div class="swiper-slide rounded-25 bg-white pt-30 blur-slide overflow-hidden relative group">
-          <h3 class="text-24 xl:text-18 leading-120% font-semibold text-center px-32">Анастасия Константиновна</h3>
-          <div class="text-14 xl:text-16 leading-140% Helvetica xl:inter text-center mt-12 sm:mt-8 opacity-70">Детский
-            стоматолог</div>
-
-          <div class="mt-24 sm:mt-10 pl-23 xl:pl-0 pr-2 w-full h-[35.5rem] relative z-1 z-1">
-            <img class="w-full h-full object-contain object-bottom" src="./assets/images/ourComand/ourComand-1.png"
-              alt="ourComand">
-          </div>
-
-          <div
-            class="w-full p-30 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-1 z-1">
-            <a href="#" class="page-button p-[1.75rem] text-14 leading-110% w-full">Подробнее о враче</a>
-          </div>
-        </div>
-        <div class="swiper-slide rounded-25 bg-white pt-30 blur-slide overflow-hidden relative group">
-          <h3 class="text-24 xl:text-18 leading-120% font-semibold text-center px-32">Анастасия Константиновна</h3>
-          <div class="text-14 xl:text-16 leading-140% Helvetica xl:inter text-center mt-12 sm:mt-8 opacity-70">Детский
-            стоматолог</div>
-
-          <div class="mt-24 sm:mt-10 pl-23 xl:pl-0 pr-2 w-full h-[35.5rem] relative z-1 z-1">
-            <img class="w-full h-full object-contain object-bottom" src="./assets/images/ourComand/ourComand-1.png"
-              alt="ourComand">
-          </div>
-
-          <div
-            class="w-full p-30 absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-1 z-1">
-            <a href="#" class="page-button p-[1.75rem] text-14 leading-110% w-full">Подробнее о враче</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
   </section>
 
   <section class="mt-120 xl:mt-80 container grid grid-cols-3 xl:grid-cols-1 gap-40 xl:gap-32">
@@ -350,7 +241,7 @@
     </div>
   </section>
 
-  <section class="container py-120 xl:pt-70 xl:pb-80 form-balls">
+  <section class="container py-120 xl:pt-70 xl:pb-80 form-balls" id="last-modal">
     <div class="px-60 pt-56 pb-53 xl:px-24 xl:py-32 rounded-25 border-blue-gradient blur-block">
       <h2 class="text-45 xl:text-24 leading-110% font-semibold montserat text-white">Записаться на прием</h2>
 
@@ -361,8 +252,8 @@
           <button type="submit" class="page-button padding-button w-full text-14 xl:text-16 leading-110% xl:font-medium">Записаться</button>
         </div>
       </form>
-      <div class="text-14 sm:text-12 leading-110% sm:leading-140% text-white opacity-70 mt-19 sm:mt-12">Нажимая на кнопку, вы соглашаетесь с политикой
-        конфиденциальности сайта</div>
+      <div class="text-14 sm:text-12 leading-110% sm:leading-140% text-white opacity-70 mt-19 sm:mt-12">Нажимая на кнопку, вы соглашаетесь с <a>политикой
+        конфиденциальности сайта</a></div>
     </div>
   </section>
 </div>

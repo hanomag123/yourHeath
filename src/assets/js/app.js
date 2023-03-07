@@ -112,8 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function disableScroll() {
     // Get the current page scroll position
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollTop;
     document.documentElement.style.setProperty('scroll-behavior', 'auto')
 
     // if any scroll is attempted, set this to the previous value
@@ -129,9 +129,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  var prevScrollpos = window.pageYOffset || document.documentElement.scrollTop;
+  var prevScrollpos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
   function scrollHeader() {
-    var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+    var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     const num = xl.matches ? 50 : 100
     if (currentScrollPos > num) {
       header.classList.add('header--active')

@@ -16,10 +16,8 @@ html {
   box-sizing: border-box;
   font-size: calc(100vw / 1600 * 10);
   font-family: 'Inter';
-  // @include breakpoint($cos-bp) {
-  //   font-size: calc(100vw / 1440 * 10);
-  // }
-
+ 
+  scroll-behavior: smooth;
   @include breakpoint($xl-bp) {
     font-size: calc(100vw / 768 * 10);
   }
