@@ -12,6 +12,7 @@
 
 .custom-block {
   background-color: rgba(0, 94, 154, 0.25);
+  position: relative;
 
   &::before {
     content: "";

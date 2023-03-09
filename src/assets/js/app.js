@@ -92,23 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.removeEventListener('scroll', handler, false);
   }
 
-  if (xl.matches) {
-    scrollAdd()
-    document.removeEventListener('scroll', scrollHeader)
-  } else {
-    document.addEventListener('scroll', scrollHeader)
-    scrollRemove()
-  }
+  scrollAdd()
 
-  xl.addEventListener('change', () => {
-    if (xl.matches) {
-      document.removeEventListener('scroll', scrollHeader);
-      scrollAdd()
-    } else {
-      document.addEventListener('scroll', scrollHeader)
-      scrollRemove()
-    }
-  })
 
   function disableScroll() {
     // Get the current page scroll position
@@ -132,13 +117,21 @@ document.addEventListener("DOMContentLoaded", () => {
   var prevScrollpos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
   function scrollHeader() {
     var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScrollPos < 0) {
+      currentScrollPos = 0
+      prevScrollpos = 0
+    }
+    if (prevScrollpos < 0) {
+      prevScrollpos = 0
+      currentScrollPos = 0
+    }
     const num = xl.matches ? 50 : 100
     if (currentScrollPos > num) {
       header.classList.add('header--active')
     } else {
       header.classList.remove('header--active')
     }
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos >= currentScrollPos) {
       header.classList.remove('out')
     } else {
       header.classList.add('out')
@@ -309,21 +302,20 @@ if (filterButtons.length && filterNames.length) {
     el.addEventListener('click', function () {
       filterButtons.forEach(el => {
         el.classList.remove('filter-item--active')
-        this.classList.add('filter-item--active')
       })
+      this.classList.add('filter-item--active')
       filterNames.forEach(el => {
         if (this.dataset.fbtn === 'all') {
           el.hidden= false
           return
         }
-        const regExp = new RegExp(`${this.innerHTML.toLowerCase()}`,'g')
-        const text = el.dataset.fname.toLowerCase().trim()
+        const textField = this.dataset.fbtn
+        if (!textField) {
+          return
+        }
+        const text = el.dataset.fname.split(/ |, |,/)
         if (text.length > 0) {
-          if ( regExp.test(text)) {
-            el.hidden = false
-          } else {
-            el.hidden = true
-          }
+          text.some(filtername => filtername === textField) ? el.hidden = false : el.hidden = true
         }
       })
     })

@@ -19,6 +19,13 @@
       }
     }
   }
+  .scroll-fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: red;
+    font-size: 3rem;
+  }
 }
 
 .out {

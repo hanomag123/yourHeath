@@ -197,6 +197,9 @@
         <!-- Header -->
 
         <header class="header z-10 blur-block">
+        
+          <div class="scroll-fix"></div>
+        
           <div class="container flex items-center justify-between gap-61">
             <div class="xl:relative xl:z-10">
               <a href="#" class="flex gap-3 py-15 xl:py-16">
@@ -259,15 +262,18 @@
                     лаборатория</h1>
             
                   <div class="mt-27 relative z-[2]">
-                    <div class="xl:hidden text-20 leading-140% text-white">Собственная медицинская лаборатория для <br> изготовления зубных протезов прямо в клинике</div>
-                    <button class="!hidden xl:!block w-full page-button px-28 py-22 xl:py-20 text-18 xl:text-16 leading-110% font-medium" data-modal="#res-modal">Записаться на прием</button>
+                    <div class="xl:hidden text-20 leading-140% text-white">Собственная медицинская лаборатория для <br> изготовления
+                      зубных протезов прямо в клинике</div>
+                    <button
+                      class="!hidden xl:!block w-full page-button px-28 py-22 xl:py-20 text-18 xl:text-16 leading-110% font-medium"
+                      data-modal="#res-modal">Записаться на прием</button>
                   </div>
-                  
+            
                 </div>
             
-                  <div class="lab-snowflake img-contain absolute z-[1]">
-                    <img src="./assets/images/lab/lab-bg.png" alt="service-bg">
-                  </div>
+                <div class="lab-snowflake img-contain absolute z-[1]">
+                  <img src="./assets/images/lab/lab-bg.png" alt="service-bg">
+                </div>
             
               </section>
             
@@ -326,7 +332,7 @@
                   </section>
             
                   <div class="container">
-                    
+            
                     <section class="mt-120 xl:mt-80 relative z-[1]">
                       <h2 class="text-45 xl:text-24 leading-110% text-dblue font-semiboldf montserat text-center max-w-[60rem] mx-auto">
                         Преимущества лечения в нашей клинике</h2>
@@ -426,19 +432,19 @@
                       <div class="absolute top-185 sm:top-[105rem] left-135 sm:left-145 w-[35rem] sm:w-[26rem] h-[33rem] sm:h-[32rem] z-[2] sm:z-0 img-contain"><img
                           src="./assets/images/ficha/ficha-3.png" alt="main"></div>
                     
-                    </section>      
+                    </section>
                   </div>
             
                   <div class="container relative" id="video-block">
                     <div class="relative z-[1]">
-                      <div class="w-full h-[65rem] xl:h-[42rem] mt-120 xl:mt-60 rounded-25 xl:rounded-15 overflow-hidden relative">
+                      <a data-fancybox href="https://www.youtube.com/watch?v=QE2q3W36_eM&ab_channel=EvilSpace" class="block w-full h-[65rem] xl:h-[42rem] mt-120 xl:mt-60 rounded-25 xl:rounded-15 overflow-hidden relative">
                         <button class="border-0 bg-transparent">
                           <svg class="w-60 h-60 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] fill-lblue hoverScale">
                             <use href='#playIcon'></use>
                           </svg>
                         </button>
                         <img class="w-full h-full object-cover" src="./assets/images/video/video-1.jpg" alt="video">
-                      </div>
+                      </a>
                   
                     </div>
                   
@@ -456,41 +462,49 @@
                 <h2 class="text-45 xl:text-24 leading-110% font-semibold montserat text-white">Лицензии</h2>
             
                 <ul class="licence-list mt-60 xl:mt-32">
-                  <li class="licence-item">
-                    <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
-                    </div>
-                    <div>
-                      <div class="licence-title">Лицензия</div>
-                      <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
-                    </div>
-                    <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                  <li>
+                    <a href="#" class="licence-item">
+                      <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
+                      </div>
+                      <div>
+                        <div class="licence-title">Лицензия</div>
+                        <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
+                      </div>
+                      <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                    </a>
                   </li>
-                  <li class="licence-item">
-                    <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
-                    </div>
-                    <div>
-                      <div class="licence-title">Лицензия</div>
-                      <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
-                    </div>
-                    <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                  <li>
+                    <a href="#" class="licence-item">
+                      <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
+                      </div>
+                      <div>
+                        <div class="licence-title">Лицензия</div>
+                        <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
+                      </div>
+                      <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                    </a>
                   </li>
-                  <li class="licence-item">
-                    <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
-                    </div>
-                    <div>
-                      <div class="licence-title">Лицензия</div>
-                      <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
-                    </div>
-                    <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                  <li>
+                    <a href="#" class="licence-item">
+                      <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
+                      </div>
+                      <div>
+                        <div class="licence-title">Лицензия</div>
+                        <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
+                      </div>
+                      <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                    </a>
                   </li>
-                  <li class="licence-item">
-                    <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
-                    </div>
-                    <div>
-                      <div class="licence-title">Лицензия</div>
-                      <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
-                    </div>
-                    <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                  <li>
+                    <a href="#" class="licence-item">
+                      <div class="text-12 leading-130% opacity-70 max-w-[13.5rem] xl:max-w-[8.5rem]">Кубанский медицинский институт
+                      </div>
+                      <div>
+                        <div class="licence-title">Лицензия</div>
+                        <div class="text-14 sm:text-12 leading-130% opacity-70 mt-8">на осуществление медицинской деятельности</div>
+                      </div>
+                      <div class="text-14 sm:text-12 leading-130% opacity-70">от 29 апреля 2016</div>
+                    </a>
                   </li>
                 </ul>
               </section>
