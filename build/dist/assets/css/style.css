@@ -2971,6 +2971,7 @@ button.swiper-pagination-bullet {
 
 .custom-block {
   background-color: rgba(0, 94, 154, 0.25);
+  position: relative;
 }
 .custom-block::before {
   content: "";
@@ -3829,6 +3830,13 @@ button.swiper-pagination-bullet {
 }
 .header nav ul li.active {
   color: var(--lblue);
+}
+.header .scroll-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: red;
+  font-size: 3rem;
 }
 
 .out {
