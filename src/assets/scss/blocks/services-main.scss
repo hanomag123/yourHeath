@@ -203,6 +203,17 @@
   }
 }
 
+.services-snowflake-3 {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  width: 35rem;
+  height: 35rem;
+  @include breakpoint($xl-bp) {
+    display: none;
+  }
+}
+
 .detail-block {
   p + p {
     margin-top: 2.5rem;
@@ -538,7 +549,13 @@
 .filter-list {
   display: flex;
   gap: 1.2rem;
-  overflow: scroll;
+  flex-wrap: wrap;
+  width: 105%;
+  @include breakpoint($xl-bp) {
+    overflow: scroll;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
   @include breakpoint($sm-bp) {
     gap: 0.8rem;
   }
@@ -561,13 +578,21 @@
     
   border: 0.1rem solid rgba(255, 255, 255, 0.8);
   border-radius: 500rem;
+  height: min-content;
+  text-align: center;
+  white-space: nowrap;
   @include breakpoint($xl-bp) {
     &:first-child {
-      margin-left: 2.5rem;
+      margin-left: 4rem;
     }
     padding: 2rem 2.4rem;
     font-size: 1.6rem;
     line-height: 140%;
+  }
+  @include breakpoint($sm-bp) {
+    &:first-child {
+      margin-left: 2.5rem;
+    }
   }
 }
 .filter-item.filter-item--active {
@@ -1199,5 +1224,81 @@ input:checked + .checkmark {
   transition: opacity .3s;
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.subtitle {
+  border-top: 0!important;
+}
+
+.subtitle + li {
+  border-top: 0!important;
+}
+
+.pricelist-balls {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 44rem;
+    height: 41.6rem;
+    left: 0rem;
+    top: -5rem;
+    
+    background: #00AEDA;
+    opacity: 0.7;
+    filter: blur(7.5rem);
+    transform: rotate(-30deg);
+    border-radius: 100%;
+    z-index: -1;
+    @include breakpoint($xl-bp) {
+      content: unset;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 44rem;
+    height: 41.6rem;
+    right: 13rem;
+    top: -20rem;
+    
+    background: #00AEDA;
+    opacity: 0.7;
+    filter: blur(7.5rem);
+    border-radius: 100%;
+    transform: rotate(-160.71deg);
+    z-index: -1;
+    @include breakpoint($xl-bp) {
+      content: unset;
+    }
+  }
+
+}
+
+.ball-price {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 40rem;
+    height: 30rem;
+    right: -5rem;
+    top: 20rem;
+    
+    background: #26FFE6;
+    filter: blur(7.5rem);
+    transform: rotate(-145.71deg);
+    z-index: -1;
+    border-radius: 50%;
+    @include breakpoint($xl-bp) {
+      content: unset;
+    }
   }
 }
