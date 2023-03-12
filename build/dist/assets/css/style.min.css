@@ -63,12 +63,14 @@ html {
     -moz-tab-size: 4;
  
     -o-tab-size: 4;
-    tab-size: 4;
+ 
+       tab-size: 4;
  
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  
     -webkit-font-feature-settings: normal;
-    font-feature-settings: normal;
+ 
+            font-feature-settings: normal;
  
 }
 
@@ -90,7 +92,7 @@ hr {
 
 abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
+            text-decoration: underline dotted;
 }
 
 h1,
@@ -1609,7 +1611,7 @@ input[type=radio] {
 
 
 input[type=search] {
-  -webkit-appearance: textfield;  
+  -webkit-appearance: textfield; 
   box-sizing: content-box;
 }
 
@@ -4646,6 +4648,44 @@ button.swiper-pagination-bullet {
   .teeth-block {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+.teeth-block h4{
+  margin-top: 1.6rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 1.6rem;
+}
+@media (max-width: 1024px){
+  .teeth-block h4{
+    font-size: 1.4rem;
+  }
+}
+.teeth-block ul{
+  margin-top: 1.2rem;
+  line-height: 140%;
+  color: var(--grey);
+  font-size: 1.6rem;
+}
+.teeth-block ul li {
+  padding-left: 2.5rem;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .teeth-block ul li {
+    padding-left: 2rem;
+  }
+}
+.teeth-block ul li::before {
+  content: "•";
+  color: var(--grey);
+  position: absolute;
+  top: 0;
+  left: 0.7rem;
+}
+@media (max-width: 1024px){
+  .teeth-block ul{
+    font-size: 1.4rem;
   }
 }
 

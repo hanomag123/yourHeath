@@ -650,6 +650,12 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  h4 {
+    @apply text-16 xl:text-14 leading-140% font-bold mt-16;
+  }
+  ul {
+    @apply text-16 xl:text-14 leading-140% text-grey mt-12 custom-list;
+  }
 }
 
 .example-image {
