@@ -698,6 +698,7 @@
 }
 
 .wave {
+  @apply absolute left-0 bottom-[-9.1rem] h-[56.7rem] w-full;
   @include breakpoint($xl-bp) {
     &::before {
       content: '';
