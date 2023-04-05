@@ -531,23 +531,6 @@ if (selects.length) {
   });
 };
 
-// Fancybox.bind('.iframe', {
-//   Image: {
-//     zoom: false,
-//   },
-//   on : {
-//     ready : () => {
-//       isSwiperOpen = true
-//       // console.log(`fancybox #${fancybox.id} is ready!`);
-//     },
-//     destroy: () => {
-//       isSwiperOpen = false
-//     } 
-//   },
-//   showClass: "fancybox-zoomIn",
-//   hideClass: "fancybox-zoomOut",
-// });
-
 Fancybox.bind('.fancybox-iframe', {
   toolbar  : false,
   smallBtn : true,
