@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[Адрес Здоровья]]></data>
+  <data name="en_project_author_name"><![CDATA[Заказать виртуальный тур]]></data>
+  <data name="en_project_author_url"><![CDATA[http://valkov.ru]]></data>
+
+
+
+  <data name="en_pano24_title"><![CDATA[01 Главный вход]]></data>
+  <data name="en_spotpoint71_tooltip"><![CDATA[02 Администратор]]></data>
+
+
+  <data name="en_pano25_title"><![CDATA[02 Администратор]]></data>
+  <data name="en_spotpoint72_tooltip"><![CDATA[03 Коридор 1]]></data>
+  <data name="en_spotpoint1000_tooltip"><![CDATA[01 Главный вход]]></data>
+
+
+  <data name="en_pano26_title"><![CDATA[03 Коридор 1]]></data>
+  <data name="en_spotpoint73_tooltip"><![CDATA[04 Приемная Глав Врача]]></data>
+  <data name="en_spotpoint78_tooltip"><![CDATA[09 Приемная Кабинет 4, 5]]></data>
+  <data name="en_spotpoint79_tooltip"><![CDATA[08 Коридор 2]]></data>
+  <data name="en_spotpoint1092_tooltip"><![CDATA[02 Администратор]]></data>
+
+
+  <data name="en_pano27_title"><![CDATA[04 Приемная Глав Врача]]></data>
+  <data name="en_spotpoint74_tooltip"><![CDATA[05 Кабинет Глав Врача]]></data>
+  <data name="en_spotpoint75_tooltip"><![CDATA[06 Кабинет 2]]></data>
+  <data name="en_spotpoint76_tooltip"><![CDATA[03 Коридор 1]]></data>
+  <data name="en_spotpoint81_tooltip"><![CDATA[07 Стерилизационная]]></data>
+
+
+  <data name="en_pano29_title"><![CDATA[05 Кабинет Глав Врача]]></data>
+  <data name="en_spotpoint1002_tooltip"><![CDATA[04 Приемная Глав Врача]]></data>
+
+
+  <data name="en_pano30_title"><![CDATA[06 Кабинет 2]]></data>
+  <data name="en_spotpoint1003_tooltip"><![CDATA[04 Приемная Глав Врача]]></data>
+
+
+  <data name="en_pano31_title"><![CDATA[07 Стерилизационная]]></data>
+  <data name="en_spotpoint999_tooltip"><![CDATA[04 Приемная Глав Врача]]></data>
+
+
+  <data name="en_pano32_title"><![CDATA[08 Коридор 2]]></data>
+  <data name="en_spotpoint77_tooltip"><![CDATA[09 Приемная Кабинет 4, 5]]></data>
+  <data name="en_spotpoint994_tooltip"><![CDATA[14 Техническая лаборатория]]></data>
+  <data name="en_spotpoint1001_tooltip"><![CDATA[03 Коридор 1]]></data>
+  <data name="en_spotpoint1170_tooltip"><![CDATA[12 Туалет]]></data>
+
+
+  <data name="en_pano33_title"><![CDATA[09 Приемная Кабинет 4, 5]]></data>
+  <data name="en_spotpoint80_tooltip"><![CDATA[08 Коридор 2]]></data>
+  <data name="en_spotpoint988_tooltip"><![CDATA[11 Кабинеn 5 Рентген]]></data>
+  <data name="en_spotpoint990_tooltip"><![CDATA[10 Кабинет 4]]></data>
+
+
+  <data name="en_pano34_title"><![CDATA[10 Кабинет 4]]></data>
+  <data name="en_spotpoint991_tooltip"><![CDATA[09 Приемная Кабинет 4, 5]]></data>
+
+
+  <data name="en_pano35_title"><![CDATA[11 Кабинеn 5 Рентген]]></data>
+  <data name="en_spotpoint989_tooltip"><![CDATA[09 Приемная Кабинет 4, 5]]></data>
+
+
+  <data name="en_pano36_title"><![CDATA[12 Туалет]]></data>
+  <data name="en_spotpoint1093_tooltip"><![CDATA[03 Коридор 1]]></data>
+
+
+  <data name="en_pano37_title"><![CDATA[13 Техническая лаборатория ]]></data>
+  <data name="en_spotpoint997_tooltip"><![CDATA[14 Техническая лаборатория]]></data>
+
+
+  <data name="en_pano38_title"><![CDATA[14 Техническая лаборатория]]></data>
+  <data name="en_spotpoint995_tooltip"><![CDATA[13 Техническая лаборатория ]]></data>
+  <data name="en_spotpoint996_tooltip"><![CDATA[15 Техническая лаборатория]]></data>
+
+
+  <data name="en_pano39_title"><![CDATA[15 Техническая лаборатория]]></data>
+  <data name="en_spotpoint998_tooltip"><![CDATA[14 Техническая лаборатория]]></data>
+
+
+
+
+
+
+  <data name="en_contextmenuopenFsLabel"><![CDATA[Enter Fullscreen]]></data>
+  <data name="en_contextmenucloseFsLabel"><![CDATA[Exit Fullscreen]]></data>
+  <data name="en_contextmenunormallabel"><![CDATA[Normal View]]></data>
+  <data name="en_contextmenuarchitecturallabel"><![CDATA[Architectural View]]></data>
+  <data name="en_contextmenulittleplanetlabel"><![CDATA[Little Planet View]]></data>
+  <data name="en_prevnexttheme8prevSceneTip"><![CDATA[Предыдущая панорама]]></data>
+  <data name="en_prevnexttheme8nextSceneTip"><![CDATA[Следующая панорама]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>
