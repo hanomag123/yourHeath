@@ -63,14 +63,12 @@ html {
     -moz-tab-size: 4;
  
     -o-tab-size: 4;
- 
-       tab-size: 4;
+    tab-size: 4;
  
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  
     -webkit-font-feature-settings: normal;
- 
-            font-feature-settings: normal;
+    font-feature-settings: normal;
  
 }
 
@@ -92,7 +90,7 @@ hr {
 
 abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted;
+    text-decoration: underline dotted;
 }
 
 h1,
@@ -477,6 +475,9 @@ video {
 .left-\[50\%\]{
   left: 50%;
 }
+.bottom-\[-9\.1rem\]{
+  bottom: -9.1rem;
+}
 .bottom-1{
   bottom: 0.1rem;
 }
@@ -585,12 +586,6 @@ video {
 }
 .mt-186{
   margin-top: 18.6rem;
-}
-.mt-100{
-  margin-top: 10rem;
-}
-.-mt-195{
-  margin-top: -19.5rem;
 }
 .mt-14{
   margin-top: 1.4rem;
@@ -717,6 +712,9 @@ video {
 }
 .h-\[65rem\]{
   height: 65rem;
+}
+.h-\[56\.7rem\]{
+  height: 56.7rem;
 }
 .max-h-\[55rem\]{
   max-height: 55rem;
@@ -1160,8 +1158,8 @@ video {
 .pb-116{
   padding-bottom: 11.6rem;
 }
-.pt-200{
-  padding-top: 20rem;
+.pb-100{
+  padding-bottom: 10rem;
 }
 .pb-157{
   padding-bottom: 15.7rem;
@@ -1617,7 +1615,7 @@ input[type=radio] {
 
 
 input[type=search] {
-  -webkit-appearance: textfield; 
+  -webkit-appearance: textfield;  
   box-sizing: content-box;
 }
 
@@ -3148,6 +3146,8 @@ button.swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   border-radius: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -3287,8 +3287,8 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   width: 12rem;
   height: 12rem;
 }
@@ -3304,11 +3304,11 @@ button.swiper-pagination-bullet {
   left: 50%;
   width: 12rem;
   height: 12rem;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 @media (max-width: 500px) {
   .cross-t, .cross-b {
@@ -3367,13 +3367,13 @@ button.swiper-pagination-bullet {
 .cross-l, .cross-r {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 12rem;
   height: 12rem;
   background-color: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 @media (max-width: 500px) {
   .cross-l, .cross-r {
@@ -3611,7 +3611,9 @@ button.swiper-pagination-bullet {
   border-radius: 9999px;
   background-color: var(--lblue);
   -webkit-filter: blur(7.5rem);
-          filter: blur(7.5rem);
+  filter: blur(7.5rem);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 @media (max-width: 1024px){
@@ -3631,7 +3633,9 @@ button.swiper-pagination-bullet {
   background-color: var(--blue);
   opacity: 0.7;
   -webkit-filter: blur(7.5rem);
-          filter: blur(7.5rem);
+  filter: blur(7.5rem);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 @media (max-width: 1024px){
@@ -3658,7 +3662,9 @@ button.swiper-pagination-bullet {
   background-color: var(--blue);
   opacity: 0.7;
   -webkit-filter: blur(7.5rem);
-          filter: blur(7.5rem);
+  filter: blur(7.5rem);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 @media (max-width: 1024px){
@@ -3674,16 +3680,6 @@ button.swiper-pagination-bullet {
   .pplus p + p {
     margin-top: 1rem;
   }
-}
-
-.wave{
-  position: absolute;
-  left: 0;
-  bottom: -9.1rem;
-  height: 56.7rem;
-  width: 100%;
-}
-@media (max-width: 1024px) {
   .wave::before {
     content: "";
     width: 100%;
@@ -3709,6 +3705,8 @@ button.swiper-pagination-bullet {
   background-color: transparent;
   will-change: transform;
   top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 @media (max-width: 1024px) {
   .header {
@@ -3772,7 +3770,9 @@ button.swiper-pagination-bullet {
 
 .custom-blur {
   -webkit-filter: blur(7.5rem);
-          filter: blur(7.5rem);
+  filter: blur(7.5rem);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .footer {
@@ -5581,9 +5581,6 @@ input:checked + .checkmark {
   }
   .xl\:mt-38{
     margin-top: 3.8rem;
-  }
-  .xl\:-mt-\[25rem\]{
-    margin-top: -25rem;
   }
   .xl\:mt-130{
     margin-top: 13rem;

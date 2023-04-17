@@ -5,11 +5,8 @@
   background-color: transparent;
   will-change: transform;
   top: 0;
-
+  transform: translate3d(0, 0, 0);
   @include breakpoint($xl-bp) {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
     width: 100%;
   }
   nav {
@@ -79,5 +76,7 @@
   backdrop-filter: blur(0.5rem);
 }
 .custom-blur {
+  -webkit-filter: blur(7.5rem);
   filter: blur(7.5rem);
+  transform: translate3d(0, 0, 0);
 }

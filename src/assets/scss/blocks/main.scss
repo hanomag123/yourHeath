@@ -287,6 +287,7 @@
 .ficha-list__item--round {
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(0.5rem);
+  transform: translate3d(0, 0, 0);
   border-radius: 100%;
   display: flex;
   flex-direction: column;
@@ -394,7 +395,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%,0);
+  transform: translate3d(-50%, -50%,0);
   width: 12rem;
   height: 12rem;
   @include breakpoint($sm-bp) {
@@ -407,9 +409,10 @@
   left: 50%;
   width: 12rem;
   height: 12rem;
-  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(0.5rem);
+  -webkit-transform: translate3d(-50%, -50%,0);
+          transform: translate3d(-50%, -50%,0);
   @include breakpoint($sm-bp) {
     width: 11rem;
     height: 11rem;
@@ -461,11 +464,12 @@
 .cross-l, .cross-r {
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
   width: 12rem;
   height: 12rem;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(0.5rem);
+  -webkit-transform: translate3d(-50%, -50%,0);
+  transform: translate3d(-50%, -50%,0);
   @include breakpoint($sm-bp) {
     width: 11rem;
     height: 11rem;
@@ -698,7 +702,6 @@
 }
 
 .wave {
-  @apply absolute left-0 bottom-[-9.1rem] h-[56.7rem] w-full;
   @include breakpoint($xl-bp) {
     &::before {
       content: '';
